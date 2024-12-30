@@ -44,6 +44,46 @@ body {
     width: 50%;
     height: auto;
 }
+
+.chatbox {
+    border-radius: 30px;
+    font-size: 2vh;
+    padding: 5%;
+    line-height: 1%;
+    border: 1px solid black;
+    width: 95%; /* Full size minus 10% margin on each side */
+    height: 95%; /* Full size minus 10% margin on each side */
+    margin: 2.5%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Ensure the input field is positioned relative to the chatbox */
+}
+
+.chatbox input {
+    height: 6%;
+    width: 80%; /* Adjust width to fit within the chatbox */
+    padding: 1%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Align to the left */
+    margin: 2.5%;
+}
+
+.chatbox .send-button {
+    height: 6%;
+    width: 12.5%; /* Adjust width to fit within the chatbox */
+    padding: 1%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Align to the right */
+    margin: 2.5%;
+}
+
 .account {
     border-radius: 30px;
     font-size: 2vh;
@@ -55,10 +95,45 @@ body {
     justify-content: center;
 }
 
-.edit{
+.edit {
     left: 100px;
+    ;
     align-self: center;
     background-color: red;
     height: 40px;
     width: 60px;
+    margin: auto;
+}
+
+.Username {
+    font-size: 2vw;
+    /* Use viewport width for responsiveness */
+}
+
+.Dexsription {
+    font-size: 1.5vw;
+    /* Use viewport width for responsiveness */
+}
+
+.boardcastchat {
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.boardcastchat img {
+    height: 50px;
+    margin-right: 10px; /* Add some space between the image and the text */
+    border-radius: 50%; /* Make the image fully rounded */
+}
+
+/* Add media queries for better responsiveness on smaller screens */
+@media (max-width: 600px) {
+    .Username {
+        font-size: 4vw;
+    }
+
+    .Dexsription {
+        font-size: 3vw;
+    }
 }
